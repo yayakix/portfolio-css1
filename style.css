@@ -2,6 +2,7 @@ body{
     box-sizing: border-box;
     margin: 0 auto;
     font-family: 'Kdam Thmor Pro', sans-serif;
+    overflow-x: hidden;
     
 }
 html {
@@ -20,7 +21,11 @@ h2{
 
 }
 hr{
-    width: 30%;
+    /* width: 30%; */
+    margin-right: 130px;
+    border: none;
+    background-color: white;
+    height: 1px;
 }
 .navbar .navbarlinks .test{
     text-decoration: none;
@@ -45,6 +50,7 @@ h1{
 background-color:#cbddd1 ;
 display: block;
 height: 100vh;
+width: 100vw;
 
 }
 .left-home{
@@ -58,16 +64,6 @@ height: 100vh;
     float: left;
     margin-top: 70px;
 }
-/* .white-block{
-    z-index: 0;
-    position: absolute;
-    top: 400px;
-    left: 600px;
-    background-color: white;
-    width: 500px;
-    height: 500px;
-    transform: rotate(40deg);
-} */
 
 button{
     padding: 15px 60px;
@@ -76,6 +72,7 @@ button{
     margin-right: 10px;
     transition: 90ms;
     font-size: 17px;
+    width: 30%;
 }
 .resumebtn:hover{
     transform: scale(1.1);
@@ -101,7 +98,8 @@ position: relative;
 
 }
 .homecontent{
-     margin: 0;
+     /* margin: 0; */
+     margin-left: 100px;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -109,21 +107,104 @@ position: relative;
 }
 
 .left-home{
-     display: inline-block;
- 
+    margin-top: 90px;
 
 }
 .right-home{
-     display: inline-block;
+      color: #1f5014;
  
 
+}
+i{
+     color: #1f5014;
+     padding-right: 10px;
+}
+i:hover{
+    color: white;
+    cursor: pointer;
+
+}
+#emailmetext{
+    text-decoration: underline;
+}
+#homepagenametitle{
+    margin-bottom: 145px;
+    margin-top: 30px;
+}
+#aboutmetext{
+    margin-bottom: 110px;
+    margin-top: 0;
+    margin-right: 20px;
+}
+.icons{
+    position: absolute;
+    bottom:90px;
+    left: 100px;
+    font-size: 40px;
+    
+}
+
+.white-block{
+    z-index: 0;
+    position: absolute;
+    bottom: 30%;
+    right: 30%;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    transform: rotate(40deg);
+      animation-name: spin;
+  animation-duration: 8000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+
+}
+.green-block{
+    z-index: 0;
+    position: absolute;
+    bottom: 30%;
+    right: 35%;
+    background-color: #1f5014;
+    width: 100px;
+    height: 100px;
+    transform: rotate(40deg);
+    animation-name: spin;
+  animation-duration: 7000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+.light-block{
+    z-index: 0;
+    position: absolute;
+    bottom: 35%;
+    right: 32%;
+    background-color: #c1e2cc;
+    width: 100px;
+    height: 100px;
+    transform: rotate(40deg);
+    animation-name: spin;
+  animation-duration: 9000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.buttons{
+     z-index: 109;
 }
 
 
 /* end of home page */
 /* projects page */
 .projects-page{
-    /* background-color: #cbddd1; */
+    background-color: #cbddd1;
+    z-index: 900;
     width: 100%;
     float: none;
     height: 100vh;
@@ -147,7 +228,10 @@ position: relative;
 /* media query */
 @media only screen and (max-width: 1300px) {
  .navbar li{
-   margin: 0px 2px;
+   margin: 0px 10px;
+}
+button{
+    width: auto;
 }
 
 }
