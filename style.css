@@ -1,237 +1,349 @@
-body{
-    box-sizing: border-box;
-    margin: 0 auto;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    overflow-x: hidden;
-    
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
 }
-h2{
-    margin-top: 0;
+.animated {
+  background-image: url(/css/images/logo.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top: 95px;
+  margin-bottom: 60px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
-.navbar{
-    width: 100%;
-    background-color: white;
-    position: fixed;
-    height: 6vh;
-    z-index: 1100;
-     /* position: absolute; */
 
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
 }
-hr{
-    /* width: 30%; */
-    margin-right: 130px;
-    border: none;
-    background-color: white;
-    height: 1px;
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
-.navbar .navbarlinks .test{
-    text-decoration: none;
-    list-style-type: none;
-     position: absolute;
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+#logo{
+    position: absolute;
+    top: 27px;
+}
+
+h2 {
+  margin-top: 0;
+}
+.navbar {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  height: 7vh;
+  z-index: 1100;
+  font-size: 20px;
+  /* position: absolute; */
+}
+hr {
+  /* width: 30%; */
+  margin-right: 130px;
+  border: none;
+  background-color: white;
+  height: 1px;
+}
+.navbar .navbarlinks .test {
+  text-decoration: none;
+  list-style-type: none;
+  position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
 }
-.navbar li{
-   display: inline;
-   margin: 0px 50px;
-}
-
-h1{
-    color: #1f5014;
-
-}
-.homepage{
-background-color:#cbddd1 ;
-display: block;
-height: 100vh;
-width: 100vw;
-
-}
-.left-home{
-    width: 50%;
-    float: left;
-    margin-top: 70px;
-    /* transform: translate(50%,-50%); */
-}
-.right-home{
-    width: 50%;
-    float: left;
-    margin-top: 70px;
+.navbar li {
+  display: inline;
+  margin: 0px 50px;
 }
 
-button{
-    padding: 15px 60px;
-    background-color:#f6f6e9 ;
-    border: none;
-    margin-right: 10px;
-    transition: 90ms;
-    font-size: 17px;
-    width: 30%;
+h1 {
+  color: #1f5014;
+  font-family: 'PT Sans', sans-serif;
+  font-size:45px
 }
-.resumebtn:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    
+.homepage {
+  background-color: #cbddd1;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+.left-home {
+  width: 50%;
+  float: left;
+  margin-top: 70px;
+  /* transform: translate(50%,-50%); */
+}
+.right-home {
+  width: 50%;
+  float: left;
+  margin-top: 70px;
+}
+
+button {
+  padding: 15px 60px;
+  background-color: #f6f6e9;
+  border: none;
+  margin-right: 15px;
+  transition: 90ms;
+  font-size: 17px;
+  width: 30%;
+  
+}
+.resumebtn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border-radius: 5px;
 }
 .portbtn:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-
+  transform: scale(1.1);
+  cursor: pointer;
+  border-radius: 5px;
 }
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
-.navbarlinks a:hover{
-   text-decoration: underline;
+.navbarlinks a:hover {
+  text-decoration: underline;
 }
-.homepage{
-    /* text-align: center; */
-    
-position: relative;
+.homepage {
+  /* text-align: center; */
 
+  position: relative;
 }
-.homecontent{
-     /* margin: 0; */
-     margin-left: 100px;
+.homecontent {
+  /* margin: 0; */
+  margin-left: 100px;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-90%);
 }
 
-.left-home{
-    margin-top: 90px;
-
+.left-home {
+  margin-top: 90px;
 }
-.right-home{
-      color: #1f5014;
- 
-
+.right-home {
+  color: #1f5014;
 }
-i{
-     color: #1f5014;
-     padding-right: 10px;
+i {
+  color: #1f5014;
+  padding-right: 10px;
 }
-i:hover{
-    color: white;
-    cursor: pointer;
-
+i:hover {
+  color: white;
+  cursor: pointer;
 }
-#emailmetext{
-    text-decoration: underline;
+#emailmetext {
+  text-decoration: underline;
 }
-#homepagenametitle{
-    margin-bottom: 145px;
-    margin-top: 30px;
+#homepagenametitle {
+  margin-bottom: 145px;
+  margin-top: 30px;
 }
-#aboutmetext{
-    margin-bottom: 110px;
-    margin-top: 0;
-    margin-right: 20px;
+#aboutmetext {
+  margin-bottom: 110px;
+  margin-top: 0;
+  margin-right: 20px;
 }
-.icons{
-    position: absolute;
-    bottom:90px;
-    left: 100px;
-    font-size: 40px;
-    
+.icons {
+  position: absolute;
+  bottom: 90px;
+  left: 100px;
+  font-size: 60px;
 }
 
-.white-block{
-    z-index: 0;
-    position: absolute;
-    bottom: 30%;
-    right: 30%;
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    transform: rotate(40deg);
-      animation-name: spin;
+.white-block {
+  z-index: 0;
+  position: absolute;
+  bottom: 30%;
+  right: 30%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  transform: rotate(40deg);
+  animation-name: spin;
   animation-duration: 8000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-
+  animation-timing-function: linear;
+  border: 1px solid black;
 }
-.green-block{
-    z-index: 0;
-    position: absolute;
-    bottom: 30%;
-    right: 35%;
-    background-color: #1f5014;
-    width: 100px;
-    height: 100px;
-    transform: rotate(40deg);
-    animation-name: spin;
+.green-block {
+  z-index: 0;
+  position: absolute;
+  bottom: 30%;
+  right: 35%;
+  background-color: #1f5014;
+  width: 100px;
+  height: 100px;
+  transform: rotate(40deg);
+  animation-name: spin;
   animation-duration: 7000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;border: 1px solid white;
 }
-.light-block{
-    z-index: 0;
-    position: absolute;
-    bottom: 35%;
-    right: 32%;
-    background-color: #c1e2cc;
-    width: 100px;
-    height: 100px;
-    transform: rotate(40deg);
-    animation-name: spin;
+.light-block {
+  z-index: 0;
+  position: absolute;
+  bottom: 35%;
+  right: 32%;
+  background-color: #cbddd1;
+  width: 100px;
+  height: 100px;
+  transform: rotate(40deg);
+  animation-name: spin;
   animation-duration: 9000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
+  border: 1px solid black;
 }
 @keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-.buttons{
-     z-index: 109;
+.buttons {
+  z-index: 109;
 }
-
 
 /* end of home page */
 /* projects page */
-.projects-page{
-    background-color: #cbddd1;
-    z-index: 900;
-    width: 100%;
-    float: none;
-    height: 100vh;
+.projects-page {
+  background-color: #cbddd1;
+  width: 100%;
+  float: none;
+  height: 100vh;
+position: relative;
 }
+.projectsbox{
+    margin: 0 auto;
+     position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ 
+   
+}
+.projectslist{
+      display: grid;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
+  margin-top: 100px;
+
+}
+projectcontainer{
+
+}
+img{
+    
+    margin: 60px 90px;
+ 
+    width: 300px;
+    height: 300px;
+    /* overflow: hidden; */
+}
+#projectstitle{
+    position: absolute;
+    top: 10%;
+    right: 50%;
+}
+a p:hover{
+    text-decoration: underline;
+
+
+}
+
 
 /* skills page */
-.skills-page{
-    height: 100vh;
-    background-color:#272727 ;
-    color: white;
-
+.skills-page {
+  height: 100vh;
+  background-color: #272727;
+  color: white;
 }
 /* contact page */
-.contact-page{
-    background-color:#1f5014 ;
-    color: white;
-    height: 100vh;
+.contact-page {
+  background-color: #1f5014;
+  color: white;
+  height: 100vh;
 }
-
+.contacticons i{
+    color: white;
+}
 
 /* media query */
 @media only screen and (max-width: 1300px) {
- .navbar li{
-   margin: 0px 10px;
-}
-button{
+  .navbar li {
+    margin: 0px 10px;
+  }
+  button {
     width: auto;
-}
+  }
+  .green-block {
+    display: none;
+  }
+  .white-block {
+    display: none;
+  }
+  .light-block {
+    display: none;
+  }
+  .projectslist{
+      display: grid;
+  grid-template-columns: 50% 50%;
 
+}
+img{
+    
+    margin: 10px;
+ 
+    width:200px;
+    height: 200px;
+    /* overflow: hidden; */
+}
+h1 {
+  color: #1f5014;
+  font-family: 'PT Sans', sans-serif;
+  font-size:xx-large
+}
 }

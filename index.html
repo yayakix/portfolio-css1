@@ -8,14 +8,12 @@
       src="https://kit.fontawesome.com/e7fbf5096b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=PT+Sans&family=Tai+Heritage+Pro&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+    <title>My Portfolio</title>
   </head>
   <body>
     <nav class="navbar">
@@ -24,7 +22,8 @@
         </div> -->
 
       <ul class="navbarlinks">
-        <li id="logo">Iyana Marquez</li>
+        <a href="."><li id="logo">Iyana Marquez</li></a>
+
         <div class="test">
           <a href="#homepage"><li>Home</li></a>
           <a href="#projects"><li>Projects</li></a>
@@ -33,19 +32,17 @@
         </div>
       </ul>
     </nav>
-    
 
     <main class="homepage" id="homepage">
-        
       <div class="homecontent">
         <div class="left-home">
           <span id="emailmetext">Email Me</span>
-          <h1 id="homepagenametitle">Iyana Marquez  (she/her)</h1>
+          <h1 id="homepagenametitle" class="animated bounce">
+            Iyana Marquez (she/her)
+          </h1>
           <h2>Front-end software engineer</h2>
           <hr />
-          
         </div>
-
 
         <div class="right-home">
           <h3 id="aboutmetitle">About Me</h3>
@@ -55,33 +52,87 @@
             University of South Florida. I strive to design websites that are as
             functional as they are visually pleasing.
           </p>
-          
+
           <div class="buttons">
-              
-            <button class="resumebtn">Resume</button>
-            <button class="portbtn">Portfolio</button>
-          </div>
+              <button class="resumebtn">Resume</button>
+            <a href="#projects"><button class="portbtn">Portfolio</button></a>
             
+          </div>
         </div>
-      
       </div>
 
-    
       <div class="icons">
-          <a href="https://www.linkedin.com/in/iyana-marquez-2ya00/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/yayakix" target="_blank"><i class="fa-brands fa-github"></i></a>
-            
-            
-          </div>
-          <div class="white-block"></div>
+        <a
+          href="https://www.linkedin.com/in/iyana-marquez-2ya00/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/yayakix" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <div class="white-block"></div>
       <div class="green-block"></div>
       <div class="light-block"></div>
     </main>
     <!-- end home page -->
 
-    <section class="projects-page">
-      <h2 id="projects">.</h2>
-      <h2>Projects</h2>
+    <section class="projects-page" id="projects">
+      <h2 id="projectstitle">Projects</h2>
+      <div class="projectsbox">
+        <div class="projectslist">
+          <div class="projectcontainer">
+            <img
+              src="./images/igclonepic.jpeg"
+              alt=""
+            />
+            <a href="https://github.com/yayakix/instagram-clone" target="_blank"><p>Instagram Clone 2022</p></a>
+          </div>
+          <div class="projectcontainer">
+            <img
+              src="./images/simonsaysgame.png"
+              alt=""
+            />
+            <a href="https://github.com/yayakix/simonsays" target="_blank"><p>Simon Says Game 2022</p></a>
+            
+          </div>
+           <div class="projectcontainer">
+            <img
+              src="./images/calculatorpic.png"
+              alt=""
+            />
+            <a href="https://629d6514ac0b813782a5a236--warm-sundae-7d4924.netlify.app/" target="_blank"><p>React Calculator 2021</p></a>
+             
+          </div>
+
+          <div class="projectcontainer">
+            <img
+              src="./images/boredapipic.png"
+              alt=""
+            />
+            <a href="https://github.com/yayakix/randomActivityAPI" target="_blank"><p>Activity Generator</p></a>
+             
+          </div>
+
+         
+
+          <div class="projectcontainer">
+            <img
+              src="./images/cocktailapipic.png"
+              alt=""
+            />
+             <p>React Cocktail Finder</p>
+          </div>
+
+          <div class="projectcontainer">
+            <img
+              src="https://images.pexels.com/photos/12194751/pexels-photo-12194751.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+            />
+             <p>Content about project</p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end projects page -->
 
@@ -121,6 +172,7 @@
         <i class="fa-brands fa-github"></i>
         <i class="fa-brands fa-linkedin"></i>
       </div>
+
     </section>
 
     <script src="script.js"></script>
